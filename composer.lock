@@ -539,12 +539,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpnomad/rest.git",
-                "reference": "b2e1213f443db0a3f0e9f31e6be06ba72fdf330d"
+                "reference": "bc207a1ecf04295e6e3f4ca432e8e09204f42301"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpnomad/rest/zipball/b2e1213f443db0a3f0e9f31e6be06ba72fdf330d",
-                "reference": "b2e1213f443db0a3f0e9f31e6be06ba72fdf330d",
+                "url": "https://api.github.com/repos/phpnomad/rest/zipball/bc207a1ecf04295e6e3f4ca432e8e09204f42301",
+                "reference": "bc207a1ecf04295e6e3f4ca432e8e09204f42301",
                 "shasum": ""
             },
             "require": {
@@ -587,7 +587,7 @@
                 "source": "https://github.com/phpnomad/rest/tree/main",
                 "issues": "https://github.com/phpnomad/rest/issues"
             },
-            "time": "2024-11-09T15:42:19+00:00"
+            "time": "2024-12-12T16:28:30+00:00"
         },
         {
             "name": "phpnomad/singleton",

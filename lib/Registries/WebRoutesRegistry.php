@@ -1,10 +1,10 @@
 <?php
 
-namespace PHPNomad\FastRoute\Component;
+namespace PHPNomad\FastRoute\Component\Registries;
 
 use PHPNomad\Di\Interfaces\InstanceProvider;
-use PHPNomad\FastRoute\Component\Interfaces\WebController;
 use PHPNomad\Rest\Interfaces\Response;
+use PHPNomad\Rest\Interfaces\WebController;
 use PHPNomad\Utils\Helpers\Arr;
 
 class WebRoutesRegistry
