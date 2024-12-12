@@ -1,6 +1,6 @@
 <?php
 
-namespace PHPNomad\Fastroute\Component\Listeners;
+namespace PHPNomad\FastRoute\Component\Listeners;
 
 use FastRoute\Dispatcher;
 use FastRoute\RouteCollector;
@@ -8,9 +8,9 @@ use PHPNomad\Auth\Enums\SessionContexts;
 use PHPNomad\Auth\Interfaces\CurrentContextResolverStrategy;
 use PHPNomad\Events\Interfaces\CanHandle;
 use PHPNomad\Events\Interfaces\Event;
-use PHPNomad\Fastroute\Component\Events\RequestInitiated;
-use PHPNomad\Fastroute\Component\Registries\RestRoutesRegistry;
-use PHPNomad\Fastroute\Component\WebRoutesRegistry;
+use PHPNomad\FastRoute\Component\Events\RequestInitiated;
+use PHPNomad\FastRoute\Component\Registries\RestRoutesRegistry;
+use PHPNomad\FastRoute\Component\WebRoutesRegistry;
 use PHPNomad\Rest\Enums\Method;
 use PHPNomad\Rest\Exceptions\RestException;
 use PHPNomad\Rest\Interfaces\Request;

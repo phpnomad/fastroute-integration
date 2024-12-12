@@ -1,9 +1,9 @@
 <?php
 
-namespace PHPNomad\Fastroute\Component;
+namespace PHPNomad\FastRoute\Component;
 
 use PHPNomad\Di\Interfaces\InstanceProvider;
-use PHPNomad\Fastroute\Component\Interfaces\WebController;
+use PHPNomad\FastRoute\Component\Interfaces\WebController;
 use PHPNomad\Rest\Interfaces\Response;
 use PHPNomad\Utils\Helpers\Arr;
 

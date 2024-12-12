@@ -1,6 +1,6 @@
 <?php
 
-namespace PHPNomad\Fastroute\Component\Events;
+namespace PHPNomad\FastRoute\Component\Events;
 
 use PHPNomad\Events\Interfaces\Event;
 use PHPNomad\Rest\Interfaces\Response;

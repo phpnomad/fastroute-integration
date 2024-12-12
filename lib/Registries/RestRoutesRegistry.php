@@ -1,6 +1,6 @@
 <?php
 
-namespace PHPNomad\Fastroute\Component\Registries;
+namespace PHPNomad\FastRoute\Component\Registries;
 
 use PHPNomad\Utils\Helpers\Arr;
 

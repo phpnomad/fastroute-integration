@@ -1,8 +1,8 @@
 <?php
 
-namespace PHPNomad\Fastroute\Component;
+namespace PHPNomad\FastRoute\Component;
 
-use PHPNomad\Fastroute\Component\Registries\RestRoutesRegistry;
+use PHPNomad\FastRoute\Component\Registries\RestRoutesRegistry;
 use PHPNomad\Rest\Interfaces\Controller;
 use PHPNomad\Rest\Interfaces\HasInterceptors;
 use PHPNomad\Rest\Interfaces\HasMiddleware;

@@ -1,12 +1,12 @@
 <?php
 
-namespace PHPNomad\Fastroute\Component;
+namespace PHPNomad\FastRoute\Component;
 
 use PHPNomad\Di\Interfaces\CanSetContainer;
 use PHPNomad\Di\Traits\HasSettableContainer;
 use PHPNomad\Events\Interfaces\HasListeners;
-use PHPNomad\Fastroute\Component\Events\RequestInitiated;
-use PHPNomad\Fastroute\Component\Listeners\DispatchRequest;
+use PHPNomad\FastRoute\Component\Events\RequestInitiated;
+use PHPNomad\FastRoute\Component\Listeners\DispatchRequest;
 use PHPNomad\Loader\Interfaces\HasClassDefinitions;
 
 class RestInitializer implements HasClassDefinitions, CanSetContainer, HasListeners

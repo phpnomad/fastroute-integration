@@ -1,6 +1,6 @@
 <?php
 
-namespace PHPNomad\Fastroute\Component;
+namespace PHPNomad\FastRoute\Component;
 
 use PHPNomad\Auth\Interfaces\User;
 use PHPNomad\Rest\Interfaces\Request as CoreRequest;
