@@ -1,6 +1,6 @@
 <?php
 
-namespace PHPNomad\Component\RestIntegration;
+namespace PHPNomad\Fastroute\Component\Registries;
 
 use PHPNomad\Utils\Helpers\Arr;
 
@@ -22,5 +22,7 @@ class RestRoutesRegistry
     public function set(callable $setter)
     {
         $this->setters[] = $setter;
+
+        return $this;
     }
 }

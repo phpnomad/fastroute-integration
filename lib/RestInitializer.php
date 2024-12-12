@@ -1,6 +1,6 @@
 <?php
 
-namespace PHPNomad\Component\RestIntegration;
+namespace PHPNomad\Fastroute\Component;
 
 use PHPNomad\Di\Interfaces\CanSetContainer;
 use PHPNomad\Di\Traits\HasSettableContainer;

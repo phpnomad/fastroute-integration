@@ -1,5 +1,5 @@
 {
-  "name": "phpnomad/rest-integration",
+  "name": "phpnomad/fastroute-rest-integration",
   "description": "description",
   "minimum-stability": "dev",
   "prefer-stable": true,
@@ -65,11 +65,13 @@
     }
   ],
   "autoload": {
-    "PHPNomad\\Component\\RestIntegration\\": "lib"
+    "PHPNomad\\FastRoute\\Component\\": "lib"
   },
   "require": {
+    "nikic/fast-route": "^1.3",
     "phpnomad/auth": "dev-main",
     "phpnomad/rest": "dev-main",
+    "phpnomad/event": "dev-main",
     "phpnomad/loader": "dev-main"
   }
 }

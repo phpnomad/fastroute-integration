@@ -1,6 +1,6 @@
 <?php
 
-namespace PHPNomad\Component\RestIntegration;
+namespace PHPNomad\Fastroute\Component;
 
 class Response implements \PHPNomad\Rest\Interfaces\Response
 {
