@@ -65,7 +65,9 @@
     }
   ],
   "autoload": {
-    "PHPNomad\\FastRoute\\Component\\": "lib"
+    "psr-4": {
+      "PHPNomad\\FastRoute\\Component\\": "lib"
+    }
   },
   "require": {
     "nikic/fast-route": "^1.3",
