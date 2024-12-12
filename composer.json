@@ -1,0 +1,75 @@
+{
+  "name": "phpnomad/rest-integration",
+  "description": "description",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "license": "MIT",
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.com:phpnomad/auth.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:phpnomad/rest.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:phpnomad/enum-polyfill.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:phpnomad/event.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:phpnomad/logger.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:phpnomad/di.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:phpnomad/update.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:phpnomad/cache.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:phpnomad/mutator.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:phpnomad/singleton.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:phpnomad/utils.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:phpnomad/facade.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:phpnomad/loader.git"
+    }
+  ],
+  "authors": [
+    {
+      "name": "Alex Standiford",
+      "email": "alex@standiford.us"
+    }
+  ],
+  "autoload": {
+    "PHPNomad\\Component\\RestIntegration\\": "lib"
+  },
+  "require": {
+    "phpnomad/auth": "dev-main",
+    "phpnomad/rest": "dev-main",
+    "phpnomad/loader": "dev-main"
+  }
+}
