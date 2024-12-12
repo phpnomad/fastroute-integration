@@ -9,7 +9,7 @@ use PHPNomad\Utils\Helpers\Arr;
 
 class WebRoutesRegistry
 {
-    protected array $routes;
+    protected array $routes = [];
 
     public function __construct(protected Response $response, protected InstanceProvider $instanceProvider)
     {
