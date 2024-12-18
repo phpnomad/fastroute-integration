@@ -1,79 +1,25 @@
 {
-  "name": "phpnomad/fastroute-rest-integration",
-  "description": "description",
-  "minimum-stability": "dev",
-  "prefer-stable": true,
-  "license": "MIT",
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "git@github.com:phpnomad/auth.git"
+    "name": "phpnomad/fastroute-rest-integration",
+    "description": "description",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alex Standiford",
+            "email": "alex@standiford.us"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PHPNomad\\FastRoute\\Component\\": "lib"
+        }
     },
-    {
-      "type": "vcs",
-      "url": "git@github.com:phpnomad/rest.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@github.com:phpnomad/enum-polyfill.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@github.com:phpnomad/event.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@github.com:phpnomad/logger.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@github.com:phpnomad/di.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@github.com:phpnomad/update.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@github.com:phpnomad/cache.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@github.com:phpnomad/mutator.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@github.com:phpnomad/singleton.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@github.com:phpnomad/utils.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@github.com:phpnomad/facade.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@github.com:phpnomad/loader.git"
+    "require": {
+        "nikic/fast-route": "^1.3",
+        "phpnomad/auth": "^1.0",
+        "phpnomad/rest": "^1.0",
+        "phpnomad/event": "^1.0",
+        "phpnomad/loader": "^1.0"
     }
-  ],
-  "authors": [
-    {
-      "name": "Alex Standiford",
-      "email": "alex@standiford.us"
-    }
-  ],
-  "autoload": {
-    "psr-4": {
-      "PHPNomad\\FastRoute\\Component\\": "lib"
-    }
-  },
-  "require": {
-    "nikic/fast-route": "^1.3",
-    "phpnomad/auth": "dev-main",
-    "phpnomad/rest": "dev-main",
-    "phpnomad/event": "dev-main",
-    "phpnomad/loader": "dev-main"
-  }
 }
