@@ -3,7 +3,7 @@
 namespace PHPNomad\FastRoute\Component;
 
 use PHPNomad\Auth\Interfaces\User;
-use PHPNomad\Rest\Interfaces\Request as CoreRequest;
+use PHPNomad\Http\Interfaces\Request as CoreRequest;
 
 class Request implements CoreRequest
 {
