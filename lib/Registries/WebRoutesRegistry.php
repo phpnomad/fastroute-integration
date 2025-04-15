@@ -3,7 +3,7 @@
 namespace PHPNomad\FastRoute\Component\Registries;
 
 use PHPNomad\Di\Interfaces\InstanceProvider;
-use PHPNomad\Rest\Interfaces\Response;
+use PHPNomad\Http\Interfaces\Response;
 use PHPNomad\Rest\Interfaces\WebController;
 use PHPNomad\Utils\Helpers\Arr;
 

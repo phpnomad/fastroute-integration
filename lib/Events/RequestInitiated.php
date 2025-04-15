@@ -3,7 +3,7 @@
 namespace PHPNomad\FastRoute\Component\Events;
 
 use PHPNomad\Events\Interfaces\Event;
-use PHPNomad\Rest\Interfaces\Response;
+use PHPNomad\Http\Interfaces\Response;
 
 class RequestInitiated implements Event
 {

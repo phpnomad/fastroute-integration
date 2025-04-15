@@ -11,10 +11,10 @@ use PHPNomad\Events\Interfaces\Event;
 use PHPNomad\FastRoute\Component\Events\RequestInitiated;
 use PHPNomad\FastRoute\Component\Registries\RestRoutesRegistry;
 use PHPNomad\FastRoute\Component\Registries\WebRoutesRegistry;
-use PHPNomad\Rest\Enums\Method;
+use PHPNomad\Http\Enums\Method;
 use PHPNomad\Rest\Exceptions\RestException;
-use PHPNomad\Rest\Interfaces\Request;
-use PHPNomad\Rest\Interfaces\Response;
+use PHPNomad\Http\Interfaces\Request;
+use PHPNomad\Http\Interfaces\Response;
 
 use function FastRoute\simpleDispatcher;
 

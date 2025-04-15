@@ -7,7 +7,7 @@ use PHPNomad\Rest\Interfaces\Controller;
 use PHPNomad\Rest\Interfaces\HasInterceptors;
 use PHPNomad\Rest\Interfaces\HasMiddleware;
 use PHPNomad\Rest\Interfaces\HasValidations;
-use PHPNomad\Rest\Interfaces\Response;
+use PHPNomad\Http\Interfaces\Response;
 use PHPNomad\Rest\Interfaces\RestStrategy as CoreRestStrategy;
 
 class RestStrategy implements CoreRestStrategy

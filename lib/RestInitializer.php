@@ -17,8 +17,8 @@ class RestInitializer implements HasClassDefinitions, CanSetContainer, HasListen
     {
         return [
           RestStrategy::class => \PHPNomad\Rest\Interfaces\RestStrategy::class,
-          Request::class      => \PHPNomad\Rest\Interfaces\Request::class,
-          Response::class     => \PHPNomad\Rest\Interfaces\Response::class,
+          Request::class      => \PHPNomad\Http\Interfaces\Request::class,
+          Response::class     => \PHPNomad\Http\Interfaces\Response::class,
         ];
     }
 

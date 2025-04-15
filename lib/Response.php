@@ -2,7 +2,7 @@
 
 namespace PHPNomad\FastRoute\Component;
 
-class Response implements \PHPNomad\Rest\Interfaces\Response
+class Response implements \PHPNomad\Http\Interfaces\Response
 {
     protected int $status = 200;
     protected array $headers = [];
