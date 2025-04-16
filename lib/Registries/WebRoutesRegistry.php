@@ -10,6 +10,7 @@ use PHPNomad\Utils\Helpers\Arr;
 class WebRoutesRegistry
 {
     protected array $routes = [];
+    protected ?array $loadedRoutes = null;
 
     public function __construct(protected Response $response, protected InstanceProvider $instanceProvider)
     {
@@ -23,7 +24,7 @@ class WebRoutesRegistry
 
     public function set(string $route, string $controller)
     {
-        unset($this->loadedRoutes);
+        $this->loadedRoutes = null;
         $this->routes[] = ['endpoint' => $route, 'controller' => $controller];
 
         return $this;
@@ -45,7 +46,7 @@ class WebRoutesRegistry
 
     public function getRoutes(): array
     {
-        if (!isset($this->loadedRoutes)) {
+        if (is_null($this->loadedRoutes)) {
             $this->loadedRoutes = $this->loadRoutes();
         }
 
