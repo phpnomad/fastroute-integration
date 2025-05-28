@@ -360,16 +360,16 @@
         },
         {
             "name": "phpnomad/loader",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpnomad/loader.git",
-                "reference": "a0f9e15cddfa9671fc1ee6ff58c06c04f6634d65"
+                "reference": "92deb4022fad56e497847ed86b7212a5c847be57"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpnomad/loader/zipball/a0f9e15cddfa9671fc1ee6ff58c06c04f6634d65",
-                "reference": "a0f9e15cddfa9671fc1ee6ff58c06c04f6634d65",
+                "url": "https://api.github.com/repos/phpnomad/loader/zipball/92deb4022fad56e497847ed86b7212a5c847be57",
+                "reference": "92deb4022fad56e497847ed86b7212a5c847be57",
                 "shasum": ""
             },
             "require": {
@@ -401,9 +401,9 @@
             "homepage": "https://github.com/phpnomad/core",
             "support": {
                 "issues": "https://github.com/phpnomad/loader/issues",
-                "source": "https://github.com/phpnomad/loader/tree/1.0.2"
+                "source": "https://github.com/phpnomad/loader/tree/1.0.3"
             },
-            "time": "2025-04-15T10:04:30+00:00"
+            "time": "2025-05-28T16:50:24+00:00"
         },
         {
             "name": "phpnomad/logger",
@@ -663,10 +663,10 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {},
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
-    "platform": {},
-    "platform-dev": {},
-    "plugin-api-version": "2.6.0"
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
 }
