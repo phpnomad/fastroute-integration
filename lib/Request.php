@@ -8,7 +8,7 @@ use PHPNomad\Http\Interfaces\Request as CoreRequest;
 class Request implements CoreRequest
 {
     protected array $headers = [];
-    protected array $params = [];
+    protected array $params  = [];
     protected ?User $user;
 
     public function __construct(?User $user = null)
@@ -19,7 +19,7 @@ class Request implements CoreRequest
     }
 
     /** @inheritDoc */
-    public function getUser(): ?User
+    public function getUser() : ?User
     {
         return $this->user;
     }
@@ -31,13 +31,13 @@ class Request implements CoreRequest
     }
 
     /** @inheritDoc */
-    public function setHeader(string $name, $value): void
+    public function setHeader(string $name, $value) : void
     {
         $this->headers[$name] = $value;
     }
 
     /** @inheritDoc */
-    public function getHeaders(): array
+    public function getHeaders() : array
     {
         return $this->headers;
     }
@@ -49,25 +49,25 @@ class Request implements CoreRequest
     }
 
     /** @inheritDoc */
-    public function hasParam(string $name): bool
+    public function hasParam(string $name) : bool
     {
         return $this->getParamValue($name, $this->params) !== null;
     }
 
     /** @inheritDoc */
-    public function setParam(string $name, $value): void
+    public function setParam(string $name, $value) : void
     {
         $this->params[$name] = $value;
     }
 
     /** @inheritDoc */
-    public function removeParam(string $name): void
+    public function removeParam(string $name) : void
     {
         unset($this->params[$name]);
     }
 
     /** @inheritDoc */
-    public function getParams(): array
+    public function getParams() : array
     {
         return $this->params;
     }
@@ -77,7 +77,7 @@ class Request implements CoreRequest
      *
      * @return array<string, string>
      */
-    protected function getAllHeaders(): array
+    protected function getAllHeaders() : array
     {
         $headers = [];
         foreach ($_SERVER as $key => $value) {
@@ -92,19 +92,28 @@ class Request implements CoreRequest
     /**
      * Retrieve a parameter value, supporting dot notation for nested parameters.
      *
-     * @param string $name Parameter name, supporting dot notation.
-     * @param array $params Array of parameters to search in.
+     * @param string $name   Parameter name, supporting dot notation.
+     * @param array  $params Array of parameters to search in.
+     *
      * @return mixed|null
      */
     protected function getParamValue(string $name, array $params)
     {
         $keys = explode('.', $name);
         foreach ($keys as $key) {
-            if (!isset($params[$key])) {
+            if (! isset($params[$key])) {
                 return null;
             }
             $params = $params[$key];
         }
         return $params;
+    }
+
+    /** @inheritDoc */
+    public function getBody() : string
+    {
+        $body = file_get_contents('php://input');
+
+        return $body === false ? '' : $body;
     }
 }

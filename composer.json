@@ -21,6 +21,6 @@
         "phpnomad/rest": "^2.0",
         "phpnomad/event": "^1.0",
         "phpnomad/loader": "^1.0",
-        "phpnomad/http": "^1.0"
+        "phpnomad/http": "^1.1"
     }
 }
